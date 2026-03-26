@@ -93,3 +93,80 @@ export const METHODOLOGY_STEPS = [
   description: string
   detail: string | null
 }[]
+
+export const SERVICE_PACKAGES = [
+  {
+    id: "assessment",
+    name: "Assessment",
+    price: "$1,500 – $2,500",
+    timeline: "1–2 weeks",
+    badge: null,
+    included: [
+      "Full operational audit",
+      "Workflow mapping and bottleneck analysis",
+      "Prioritized action plan with ROI projections",
+      "Executive summary presentation",
+    ],
+    cta: "Start with an Assessment",
+  },
+  {
+    id: "implementation",
+    name: "Implementation",
+    price: "$8,000 – $30,000",
+    timeline: "4–12 weeks",
+    badge: "Most Popular",
+    included: [
+      "Process improvement and documentation",
+      "Systems integration (connect existing tools)",
+      "Custom application development (where needed)",
+      "Team training and change management",
+      "Post-launch support period",
+    ],
+    cta: "Plan Your Implementation",
+  },
+  {
+    id: "retained",
+    name: "Retained Support",
+    price: "$2,500 – $5,000/mo",
+    timeline: "20–40 hours/month",
+    badge: null,
+    included: [
+      "Ongoing consulting and strategy sessions",
+      "Continuous development and improvements",
+      "System maintenance and monitoring",
+      "Priority support and issue resolution",
+    ],
+    cta: "Get Ongoing Support",
+  },
+] satisfies {
+  id: string
+  name: string
+  price: string
+  timeline: string
+  badge: string | null
+  included: string[]
+  cta: string
+}[]
+
+export const SERVICES_FAQ = [
+  {
+    question: "What if the scope changes mid-project?",
+    answer:
+      "We scope tightly upfront, but we're not rigid. Changes are documented, re-estimated, and approved before work continues.",
+  },
+  {
+    question: "Do we own the code?",
+    answer:
+      "Yes, 100%. Everything we build is yours. No vendor lock-in, no licensing fees.",
+  },
+  {
+    question: "What industries do you serve?",
+    answer:
+      "Primarily construction and skilled trades, but our methodology applies to any operations-heavy business.",
+  },
+  {
+    question: "How do we get started?",
+    answer:
+      "Apply through our form. We'll review and schedule a discovery call within 48 hours.",
+  },
+] satisfies { question: string; answer: string }[]

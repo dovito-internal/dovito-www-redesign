@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { ThemeProvider } from "@/lib/theme"
 import { Layout } from "@/components/layout/Layout"
 import { Home } from "@/pages/Home"
+import { Services } from "@/pages/Services"
 import { NotFound } from "@/pages/NotFound"
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path="services" element={<Services />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

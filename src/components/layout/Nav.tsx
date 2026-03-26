@@ -17,6 +17,15 @@ export function Nav() {
     return () => window.removeEventListener("scroll", handler)
   }, [])
 
+  useEffect(() => {
+    if (!mobileOpen) return
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMobileOpen(false)
+    }
+    document.addEventListener("keydown", handler)
+    return () => document.removeEventListener("keydown", handler)
+  }, [mobileOpen])
+
   const desktopLinkClass = ({ isActive }: { isActive: boolean }) =>
     [
       "relative text-sm transition-colors duration-200",
@@ -81,6 +90,7 @@ export function Nav() {
             className="md:hidden"
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X className="size-4" /> : <Menu className="size-4" />}
           </Button>

@@ -43,7 +43,7 @@ export function Hero() {
 
           <motion.p
             variants={fadeUp}
-            className="mt-4 max-w-xl text-base text-white/50"
+            className="mt-4 max-w-xl text-base text-white/70"
           >
             For established construction companies seeking operational efficiency.
           </motion.p>

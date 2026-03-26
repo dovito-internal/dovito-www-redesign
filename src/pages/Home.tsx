@@ -3,6 +3,8 @@ import { ArrowRight } from "lucide-react"
 import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Hero } from "@/components/sections/Hero"
+import { Challenge } from "@/components/sections/Challenge"
+import { Solution } from "@/components/sections/Solution"
 import { Methodology } from "@/components/sections/Methodology"
 
 const fadeUp = {
@@ -14,6 +16,10 @@ export function Home() {
   return (
     <>
       <Hero />
+
+      <Challenge />
+
+      <Solution />
 
       <Methodology />
 

@@ -13,20 +13,29 @@ export const METHODOLOGY_STEPS = [
     label: "DO",
     title: "Discover",
     description:
-      "Operational audit to map your current workflows, identify bottlenecks, and quantify the cost of inefficiency.",
+      "We start with a deep operational audit. Map your workflows, identify bottlenecks, and quantify the cost of manual processes. No assumptions — just data.",
+    detail: "Assessment package — $1,500–$2,500 / 1–2 weeks",
   },
   {
     number: "02",
     label: "VI",
     title: "Validate",
     description:
-      "Prioritize the highest-impact solutions and build a phased roadmap with clear milestones and ROI targets.",
+      "Prioritize solutions by impact and feasibility. Build a roadmap with clear milestones, measurable outcomes, and realistic timelines. Every dollar tied to ROI.",
+    detail: null,
   },
   {
     number: "03",
     label: "TO",
     title: "Transform",
     description:
-      "Implement, measure, and iterate. Systems go live, teams get trained, and results get tracked.",
+      "Implement process improvements, integrate disconnected systems, and build custom tools where needed. Train your team. Measure results. Iterate.",
+    detail: "Implementation package — $8k–$30k / 4–12 weeks",
   },
-] as const
+] satisfies {
+  number: string
+  label: string
+  title: string
+  description: string
+  detail: string | null
+}[]

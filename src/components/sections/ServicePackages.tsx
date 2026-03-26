@@ -58,7 +58,7 @@ export function ServicePackages() {
                   className={[
                     "flex flex-col rounded-xl border bg-[hsl(var(--background))] p-8 transition-shadow",
                     isFeatured
-                      ? "border-[hsl(var(--secondary))] ring-2 ring-[hsl(var(--secondary)/0.4)] shadow-lg scale-[1.02]"
+                      ? "border-[hsl(var(--secondary))] ring-2 ring-[hsl(var(--secondary)/0.4)] shadow-lg md:scale-[1.02]"
                       : "border-[hsl(var(--border))]",
                   ].join(" ")}
                 >

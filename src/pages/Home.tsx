@@ -6,6 +6,7 @@ import { Hero } from "@/components/sections/Hero"
 import { Challenge } from "@/components/sections/Challenge"
 import { Solution } from "@/components/sections/Solution"
 import { Methodology } from "@/components/sections/Methodology"
+import { SocialProof } from "@/components/sections/SocialProof"
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -22,6 +23,8 @@ export function Home() {
       <Solution />
 
       <Methodology />
+
+      <SocialProof />
 
       {/* CTA */}
       <section className="py-24">

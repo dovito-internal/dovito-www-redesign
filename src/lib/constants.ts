@@ -7,6 +7,60 @@ export const NAV_LINKS = [
   { label: "Contact", href: "/contact" },
 ] as const
 
+export const PAIN_POINTS = [
+  {
+    icon: "Clock",
+    headline: "Hours lost to manual work",
+    description:
+      "You spend hours on repetitive work that could be automated — data entry, invoicing, scheduling, follow-ups.",
+  },
+  {
+    icon: "TrendingDown",
+    headline: "Revenue left on the table",
+    description:
+      "Missed quotes, delayed billing, and slow turnarounds cost you jobs. Your systems should close the gap, not widen it.",
+  },
+  {
+    icon: "Users",
+    headline: "Team at capacity",
+    description:
+      "Your people are maxed out on admin instead of doing the work that grows the business.",
+  },
+  {
+    icon: "Unplug",
+    headline: "Disconnected tools",
+    description:
+      "QuickBooks doesn't talk to your CRM. Your CRM doesn't talk to your project tracker. Nothing talks to anything.",
+  },
+] satisfies { icon: string; headline: string; description: string }[]
+
+export const SOLUTIONS = [
+  {
+    icon: "Zap",
+    headline: "Automate the repetitive",
+    description:
+      "Invoice generation, scheduling, follow-ups, data sync — automated so your team can focus on real work.",
+  },
+  {
+    icon: "Network",
+    headline: "Connect your systems",
+    description:
+      "One source of truth. Your tools integrated, your data flowing, your team aligned.",
+  },
+  {
+    icon: "Layers",
+    headline: "Build for scale",
+    description:
+      "Custom applications designed for how your business actually works — not how some vendor thinks it should.",
+  },
+  {
+    icon: "Heart",
+    headline: "Family-first approach",
+    description:
+      "We build systems that give you time back. For your business, your team, and the people waiting at home.",
+  },
+] satisfies { icon: string; headline: string; description: string }[]
+
 export const METHODOLOGY_STEPS = [
   {
     number: "01",

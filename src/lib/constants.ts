@@ -226,3 +226,15 @@ export const BELIEFS = [
       "When it matters, we act. Inspired by the passengers of Flight 93 — decisive, calm, and committed to the right outcome.",
   },
 ] satisfies { number: string; title: string; description: string }[]
+
+export const SOCIAL_LINKS = [
+  { label: "LinkedIn",  href: "#", icon: "Linkedin"  },
+  { label: "Facebook",  href: "#", icon: "Facebook"  },
+  { label: "Instagram", href: "#", icon: "Instagram" },
+  { label: "X",         href: "#", icon: "Twitter"   },
+] satisfies { label: string; href: string; icon: string }[]
+
+export const LEGAL_LINKS = [
+  { label: "Privacy Policy",   href: "#" },
+  { label: "Terms of Service", href: "#" },
+] satisfies { label: string; href: string }[]

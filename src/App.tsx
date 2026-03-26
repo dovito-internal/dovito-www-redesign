@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/lib/theme"
 import { Layout } from "@/components/layout/Layout"
 import { Home } from "@/pages/Home"
 import { Services } from "@/pages/Services"
+import { About } from "@/pages/About"
 import { NotFound } from "@/pages/NotFound"
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
           <Route element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="services" element={<Services />} />
+            <Route path="about" element={<About />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

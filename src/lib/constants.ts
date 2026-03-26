@@ -170,3 +170,59 @@ export const SERVICES_FAQ = [
       "Apply through our form. We'll review and schedule a discovery call within 48 hours.",
   },
 ] satisfies { question: string; answer: string }[]
+
+export const VALUES = [
+  {
+    title: "Direct",
+    description:
+      "No jargon, no runaround. We tell you what we see, what it costs, and what to expect.",
+  },
+  {
+    title: "Reliable",
+    description:
+      "We show up, we deliver, we follow through. Every time.",
+  },
+  {
+    title: "Transparent",
+    description:
+      "You see our work, our reasoning, and our numbers. No black boxes.",
+  },
+  {
+    title: "Results-Driven",
+    description:
+      "Every dollar spent is tied to a measurable outcome. If we can't measure it, we don't propose it.",
+  },
+] satisfies { title: string; description: string }[]
+
+export const BELIEFS = [
+  {
+    number: "01",
+    title: "Technology Serves People",
+    description:
+      "Technology exists to remove tedious tasks and expand human capacity — not to replace judgment or impose complexity.",
+  },
+  {
+    number: "02",
+    title: "Honoring Legacy",
+    description:
+      "What you've built has value. We support and strengthen existing systems, not tear them down.",
+  },
+  {
+    number: "03",
+    title: "Excellence and Accountability",
+    description:
+      "High standards, clear scopes, honest communication. We hold ourselves to the same bar we set for your operation.",
+  },
+  {
+    number: "04",
+    title: "Collaboration",
+    description:
+      "We work alongside you — same objectives, same accountability. Your success is the only metric that matters.",
+  },
+  {
+    number: "05",
+    title: "Let's Roll",
+    description:
+      "When it matters, we act. Inspired by the passengers of Flight 93 — decisive, calm, and committed to the right outcome.",
+  },
+] satisfies { number: string; title: string; description: string }[]
